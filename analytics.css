@@ -1,0 +1,58 @@
+.consent-banner {
+  position: fixed;
+  z-index: 20;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 760px;
+  margin: auto;
+  padding: 1rem 1.1rem;
+  background: #17152b;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--lime);
+  border-radius: .9rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .45);
+}
+
+.consent-banner p {
+  margin: 0;
+  font-size: .92rem;
+}
+
+.consent-actions {
+  display: flex;
+  gap: .55rem;
+  flex: 0 0 auto;
+}
+
+.consent-actions button {
+  padding: .65rem .9rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #24203d;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.consent-actions .consent-accept {
+  border-color: var(--lime);
+  background: var(--lime);
+  color: #10131c;
+}
+
+@media (max-width: 600px) {
+  .consent-banner {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .consent-actions button {
+    flex: 1;
+  }
+}
