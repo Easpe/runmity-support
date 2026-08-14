@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Runmity privacy notice.">
+  <title>Runmity Privacy Notice</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="subhead"><nav><a class="brand" href="./">Runmity</a><a href="privacy.html">Privacy</a></nav><h1>データ取扱説明<br><span>Privacy Notice</span></h1><p>Last updated: 2026-08-14</p></header>
+  <main>
+    <section>
+      <h2>日本語</h2>
+      <p>Runmityの現行Garmin版は、開発者が運用するアカウント、Web API、バックエンド、解析サービスを使用しません。正確な位置、走行経路、Garminアカウント情報、氏名、連絡先を収集または送信しません。</p>
+      <p>ラン中、近くのRunmity端末とのGeneric ANT通信に8バイトのpayloadを使用します。payloadにはプロトコル情報、参加状態、アクティビティごとに生成する24-bit短期ID、シーケンスまたは短期ACK宛先が含まれます。短期IDは本人確認用ではなく、ラン中の相互検知と重複通知抑止だけに使用し、アクティビティ終了時に破棄します。通信はオープンなANT public networkを使用し、暗号化または本人認証された通信ではありません。</p>
+      <p>対応製品のうち統計機能を持つ端末では、直近7日の日別Greetingイベント数、現在・最高ストリーク、累計、設定値をウォッチ内だけに保存します。相手のID、時刻別履歴、位置、走行経路は保存しません。保存されたアプリデータはRunmityを端末から削除することで削除できます。</p>
+      <p>RunmityはRSSIを正確な距離、相手の身元、安全、物理的な接触の証明として扱いません。近接検知への参加、Greetingアラート、振動は設定から停止できます。</p>
+    </section>
+
+    <section>
+      <h2>English</h2>
+      <p>The current Garmin version of Runmity does not use a developer-operated account, web API, backend, or analytics service. It does not collect or transmit precise location, running routes, Garmin account information, names, or contact details.</p>
+      <p>During a run, Runmity exchanges an 8-byte payload with nearby Runmity devices over Generic ANT. The payload contains protocol information, participation state, a random 24-bit activity-scoped ID, and a sequence or short-lived ACK target. The temporary ID is not an identity credential. It is used only for mutual detection and duplicate suppression during the current activity and is discarded when the activity ends. Communication uses the open ANT public network and is not encrypted or authenticated as a person.</p>
+      <p>On supported products with statistics, Runmity stores only the last seven days of greeting-event counts, current and best streak, total count, and preferences locally on the watch. It does not store peer IDs, timestamped encounter history, location, or routes. You can delete stored application data by removing Runmity from the device.</p>
+      <p>Runmity does not treat RSSI as proof of exact distance, identity, safety, or physical contact. Participation, greeting alerts, and vibration can be disabled in settings.</p>
+    </section>
+
+    <section><h2>Contact</h2><p><a class="button" href="mailto:info@easpe.jp?subject=Runmity%20Privacy">info@easpe.jp</a></p></section>
+  </main>
+  <footer>© 2026 Easpe · Runmity</footer>
+</body>
+</html>
