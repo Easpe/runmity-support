@@ -6,9 +6,11 @@
   <meta name="description" content="Runmity privacy notice.">
   <title>Runmity Privacy Notice</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="analytics.css">
+  <script defer src="analytics.js"></script>
 </head>
 <body>
-  <header class="subhead"><nav><a class="brand" href="./">Runmity</a><a href="privacy.html">Privacy</a></nav><h1>データ取扱説明<br><span>Privacy Notice</span></h1><p>Last updated: 2026-08-14</p></header>
+  <header class="subhead"><nav><a class="brand" href="./">Runmity</a><a href="privacy.html">Privacy</a></nav><h1>データ取扱説明<br><span>Privacy Notice</span></h1><p>Last updated: 2026-08-15</p></header>
   <main>
     <section>
       <h2>日本語</h2>
@@ -18,12 +20,26 @@
       <p>RunmityはRSSIを正確な距離、相手の身元、安全、物理的な接触の証明として扱いません。近接検知への参加、Greetingアラート、振動は設定から停止できます。</p>
     </section>
 
+    <section id="website-analytics">
+      <h2>サポートサイトのアクセス解析</h2>
+      <p>この説明はRunmityのGarminアプリ本体ではなく、Easpeが公開するサポートサイトにのみ適用されます。サイト改善とConnect IQ Storeへの遷移状況を把握するため、閲覧者が許可した場合に限りGoogle Analytics 4を使用します。</p>
+      <p>計測対象はページ表示、参照元、ブラウザ・端末・言語などの一般的な技術情報、スクロール、Connect IQ Storeリンクのクリックです。氏名、メールアドレス、Garminアカウント、ウォッチ内のGreeting記録、正確な位置情報は送信しません。広告向けGoogle Signalsと広告パーソナライズは無効にしています。</p>
+      <p>初回表示の選択画面で計測を拒否できます。選択はブラウザのローカルストレージに保存され、ブラウザのサイトデータを削除すると再選択できます。Googleによるデータ処理については<a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener">Googleプライバシーポリシー</a>をご確認ください。</p>
+    </section>
+
     <section>
       <h2>English</h2>
       <p>The current Garmin version of Runmity does not use a developer-operated account, web API, backend, or analytics service. It does not collect or transmit precise location, running routes, Garmin account information, names, or contact details.</p>
       <p>During a run, Runmity exchanges an 8-byte payload with nearby Runmity devices over Generic ANT. The payload contains protocol information, participation state, a random 24-bit activity-scoped ID, and a sequence or short-lived ACK target. The temporary ID is not an identity credential. It is used only for mutual detection and duplicate suppression during the current activity and is discarded when the activity ends. Communication uses the open ANT public network and is not encrypted or authenticated as a person.</p>
       <p>On supported products with statistics, Runmity stores only the last seven days of greeting-event counts, current and best streak, total count, and preferences locally on the watch. It does not store peer IDs, timestamped encounter history, location, or routes. You can delete stored application data by removing Runmity from the device.</p>
       <p>Runmity does not treat RSSI as proof of exact distance, identity, safety, or physical contact. Participation, greeting alerts, and vibration can be disabled in settings.</p>
+    </section>
+
+    <section>
+      <h2>Support website analytics</h2>
+      <p>This section applies only to the support website operated by Easpe, not to the Runmity Garmin app. With the visitor's permission, the site uses Google Analytics 4 to improve the guide and measure visits to the Connect IQ Store.</p>
+      <p>Measured interactions include page views, referral source, general browser, device and language information, scrolling, and clicks to the Connect IQ Store. The site does not send names, email addresses, Garmin account information, greeting records stored on the watch, or precise location. Google Signals and ad personalization are disabled.</p>
+      <p>You can decline analytics in the choice shown on your first visit. The choice is stored in browser local storage and can be reset by deleting this site's browser data. See the <a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noopener">Google Privacy Policy</a> for Google's processing terms.</p>
     </section>
 
     <section><h2>Contact</h2><p><a class="button" href="mailto:info@easpe.jp?subject=Runmity%20Privacy">info@easpe.jp</a></p></section>
