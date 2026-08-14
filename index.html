@@ -9,42 +9,119 @@
 </head>
 <body>
   <header class="hero">
-    <nav><a class="brand" href="./">Runmity</a><a href="privacy.html">Privacy</a></nav>
+    <nav><a class="brand" href="./">Runmity</a><span class="nav-links"><a href="#setup">Setup</a><a href="#troubleshooting">Troubleshooting</a><a href="privacy.html">Privacy</a></span></nav>
     <div class="hero-copy">
       <span class="mark" aria-hidden="true">✋</span>
       <p class="eyebrow">Garmin Connect IQ Data Field</p>
       <h1>Make passing runners<br>feel a little friendlier.</h1>
-      <p>Runmityは、近くの利用者同士がラン中に気軽な挨拶を交わすきっかけを作る、実験的なGarmin Data Fieldです。</p>
+      <p>Runmityは、近くの利用者同士がラン中に気軽な挨拶を交わすきっかけを作るGarmin Connect IQデータ項目です。</p>
     </div>
   </header>
 
   <main>
-    <section>
-      <h2>初期設定</h2>
-      <ol>
-        <li>Connect IQ StoreからRunmityをインストールします。</li>
-        <li>Garminの「ラン」アクティビティを開き、1項目のデータ画面にRunmityを追加します。</li>
-        <li>もう1台の対応ウォッチでもRunmityを追加し、ランを開始して送信状態にします。</li>
-        <li>System 8端末では「センサーとアクセサリー」から「Runmity 近くのランナー」を追加します。</li>
-        <li>ラン設定の「アラート」→「Connect IQ」でRunmityを有効にし、双方でランを開始します。</li>
-      </ol>
-      <aside><strong>初回版の制約:</strong> System 8端末の初回センサー登録には、Runmityを実行中の別の対応ウォッチが近くに必要です。単独の最初の利用者は登録を完了できません。</aside>
+    <section class="intro-grid">
+      <article>
+        <p class="eyebrow">できること</p>
+        <h2>ラン中に、ハイタッチのきっかけを。</h2>
+        <p>双方のウォッチがRunmityを検知すると、専用の振動と全画面のハイタッチアニメーションでお知らせします。同じ相手へのGreetingは1回のランにつき1回だけです。</p>
+      </article>
+      <article>
+        <p class="eyebrow">必要なもの</p>
+        <h2>対応ウォッチが2台</h2>
+        <p>Greetingには双方のウォッチへのインストールが必要です。センサー登録が必要な機種では、最初の登録時にもRunmityを実行中の別の対応ウォッチを使用します。</p>
+      </article>
     </section>
 
-    <section>
-      <h2>How to set up</h2>
+    <section id="devices">
+      <p class="eyebrow">Device guide</p>
+      <h2>対応機種と設定の違い</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>対象機種</th><th>最初のセンサー登録</th><th>統計画面</th></tr></thead>
+          <tbody>
+            <tr><td>Forerunner 55、245（非Music）</td><td><strong>不要</strong></td><td>なし（軽量版）</td></tr>
+            <tr><td>Forerunner 245 Music、745、945／945 LTE</td><td><strong>不要</strong></td><td>あり</td></tr>
+            <tr><td>Forerunner 70、165／165 Music、170／170 Music、255／255 Music／255S／255S Music、265／265S、570 42mm／47mm、955／955 Dual Power、965、970</td><td><strong>必要・初回のみ</strong></td><td>あり</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <aside><strong>重要:</strong> 「必要・初回のみ」の機種は、Runmityを実行中の別の対応ウォッチが近くにないとセンサー登録を完了できません。単独の最初の利用者は登録できません。</aside>
+    </section>
+
+    <section id="setup">
+      <p class="eyebrow">Initial setup</p>
+      <h2>初回設定</h2>
+
+      <article class="step-card">
+        <span class="step-number">1</span>
+        <div><h3>RunmityをRun画面へ追加（全機種）</h3>
+          <ol>
+            <li>Connect IQ StoreからRunmityをインストールします。</li>
+            <li>GarminのRunアクティビティで、1項目のデータ画面にRunmityを追加します。</li>
+          </ol>
+          <h4>Forerunner 55</h4>
+          <p>UPを長押し → アクティビティ＆アプリ → ラン → ラン設定 → トレーニングページ → 追加 → カスタムデータ → 1項目 → データ項目 → Connect IQ → Runmity</p>
+          <h4>Forerunner 570</h4>
+          <p>ランを開く → ラン設定 → データ画面 → データ項目を編集 → Connect IQ → Runmity</p>
+          <p class="note">その他の機種では、「トレーニングページ」または「データ画面」内のConnect IQデータ項目からRunmityを選びます。名称は機種や言語設定により異なる場合があります。</p>
+        </div>
+      </article>
+
+      <article class="step-card">
+        <span class="step-number">2</span>
+        <div><h3>最初のセンサー登録（対象機種のみ・1回だけ）</h3>
+          <p>上の表で「必要・初回のみ」となっている機種だけ実施します。</p>
+          <ol>
+            <li>別の対応ウォッチでもRunmityをRun画面に追加し、先にRunを開始します。</li>
+            <li>登録するウォッチで「センサーとアクセサリー」→「新規追加」→「Connect IQ」を開きます。「Connect IQ」がない場合は「すべて検索」を選びます。</li>
+            <li>最大30秒待ち、「Runmity 近くのランナー」を選択して登録を完了します。</li>
+          </ol>
+          <p class="note">Forerunner 55、245／245 Music、745、945／945 LTEではこの手順を飛ばしてください。</p>
+        </div>
+      </article>
+
+      <article class="step-card">
+        <span class="step-number">3</span>
+        <div><h3>Greetingアラートを有効化（全機種）</h3>
+          <p>Run設定の「アラート」→「Connect IQ」→「Runmity」をオンにします。機種によっては「アラート設定」内に表示されます。</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="every-run">
+      <p class="eyebrow">Every run</p>
+      <h2>通常の利用方法</h2>
+      <p>初回設定後は、センサー検索を繰り返す必要はありません。</p>
       <ol>
-        <li>Install Runmity from the Connect IQ Store.</li>
-        <li>Add Runmity to a one-field data screen in the native Run activity.</li>
-        <li>On a second supported watch, add Runmity and start Run so it is transmitting.</li>
-        <li>On a System 8 watch, add “Runmity Nearby” under Sensors &amp; Accessories.</li>
-        <li>Enable Runmity under Run Settings → Alerts → Connect IQ, then start Run on both watches.</li>
+        <li>双方のウォッチで通常のRunアクティビティを開きます。</li>
+        <li>Runを開始して走ります。</li>
+        <li>相互検知が成立すると、振動とハイタッチアニメーションが表示されます。</li>
       </ol>
-      <aside><strong>First-release limitation:</strong> Initial sensor registration on System 8 requires another compatible watch nearby and actively running Runmity. A solo first adopter cannot complete registration.</aside>
+      <p>同じ相手には、そのラン中は再通知しません。Auto Pause中のウォッチはGreetingの対象になりません。</p>
+    </section>
+
+    <section id="troubleshooting">
+      <p class="eyebrow">Troubleshooting</p>
+      <h2>うまく動かないとき</h2>
+      <div class="faq-grid">
+        <article><h3>センサーが見つからない</h3><p>もう1台でRunmityをRun画面に追加し、先にRunを開始してください。その状態で登録側の「Connect IQ」または「すべて検索」を最大30秒実行します。</p></article>
+        <article><h3>振動するが画面が出ない</h3><p>Run設定の「アラート」または「アラート設定」から、Connect IQのRunmityをオンにしてください。</p></article>
+        <article><h3>停止中に反応しない</h3><p>Auto Pause中はGreeting対象外です。実走するか、室内で確認するときだけAuto Pauseをオフにしてください。</p></article>
+        <article><h3>同じ相手に2回目が出ない</h3><p>仕様どおりです。同じ相手への通知は1回のランにつき1回です。再確認するときは双方で新しいRunアクティビティを開始してください。</p></article>
+      </div>
+    </section>
+
+    <section lang="en">
+      <p class="eyebrow">English quick guide</p>
+      <h2>Setup and everyday use</h2>
+      <p>Install Runmity on both supported watches and add it to a one-field data screen in the native Run activity.</p>
+      <p><strong>One-time sensor registration is required on:</strong> Forerunner 70, 165 series, 170 series, 255 series, 265 series, 570 series, 955 series, 965, and 970. Start Runmity on a second watch first, then open Sensors &amp; Accessories → Add New → Connect IQ (or Search All) and select “Runmity Nearby.”</p>
+      <p><strong>No sensor registration is required on:</strong> Forerunner 55, 245 series, 745, and 945 series.</p>
+      <p>Enable Runmity under Run Settings → Alerts → Connect IQ. After setup, simply start the normal Run activity on both watches. Sensor search does not need to be repeated. Watches in Auto Pause are not eligible for a greeting.</p>
     </section>
 
     <section class="grid">
-      <article><h2>No account</h2><p>アカウント、スマートフォン、位置情報、インターネット接続、バックエンドは使用しません。</p></article>
+      <article><h2>No account</h2><p>Runmityの動作にアカウント、スマートフォン、位置情報、インターネット接続は使用しません。</p></article>
       <article><h2>Activity-scoped</h2><p>匿名の短期IDはアクティビティごとに生成し、ラン終了時に破棄します。</p></article>
       <article><h2>Local stats</h2><p>対応端末では日別のGreetingイベント数、ストリーク、累計だけをウォッチ内に保存します。</p></article>
     </section>
